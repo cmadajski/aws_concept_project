@@ -1,0 +1,11 @@
+; any ip not associated with a group defaults to groups "all" and "nogroup"
+123.123.123.123
+
+; group names are defined in square brackets
+[public]
+111.111.111.111
+222.222.222.222
+
+[private]
+101.101.101.101
+202.202.202.202
