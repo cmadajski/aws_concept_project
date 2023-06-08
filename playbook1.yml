@@ -1,0 +1,11 @@
+---
+- name: Update server os
+  hosts: public
+  remote_user: root
+
+  tasks:
+  - name: Update OS (Ubuntu AMI)
+    ansible.builtin.apt:
+      name: install
+      state: latest
+
