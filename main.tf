@@ -14,6 +14,10 @@ provider "aws" {
 	secret_key = var.aws_secret_key
 }
 
+resource "aws_vpc" "main-vpc" {
+	cidr_block = "10.0.0.0/16"	
+}
+
 resource "aws_instance" "test_instance" {
 	ami           = "ami-053b0d53c279acc90"
 	instance_type = "t2.micro"
